@@ -1,0 +1,640 @@
+/* ==================== Faculty Panel Styling ==================== */
+
+:root {
+  --faculty-primary: #123c6e;
+  --faculty-primary-dark: #0d2c52;
+  --faculty-accent: #e9b528;
+  --faculty-accent-light: #f5c84a;
+  --faculty-bg: #f7f9fc;
+  --faculty-text: #1f2937;
+  --faculty-border: #e5e7eb;
+  --faculty-success: #10b981;
+  --faculty-danger: #ef4444;
+  --faculty-warning: #f59e0b;
+  --faculty-info: #3b82f6;
+}
+
+/* ===== Login Page ===== */
+.login-section {
+  background: linear-gradient(135deg, #f7f9fc 0%, #f0f4f8 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.min-vh {
+  min-height: 100vh;
+}
+
+.login-info h2 {
+  color: var(--faculty-primary);
+}
+
+.feature-item {
+  font-size: 0.95rem;
+  color: var(--faculty-text);
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateX(10px);
+}
+
+.login-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--faculty-border);
+  transition: all 0.3s;
+}
+
+.login-card:hover {
+  box-shadow: 0 20px 50px rgba(18, 60, 110, 0.15) !important;
+}
+
+.login-header {
+  background: linear-gradient(135deg, var(--faculty-primary) 0%, var(--faculty-primary-dark) 100%);
+}
+
+.login-header i {
+  animation: slideDown 0.6s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-control, .form-select {
+  border: 1px solid var(--faculty-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  transition: all 0.3s;
+  font-size: 0.95rem;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--faculty-accent);
+  box-shadow: 0 0 0 0.2rem rgba(233, 181, 40, 0.15);
+}
+
+.form-label {
+  color: var(--faculty-text);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.input-group-text {
+  border: 1px solid var(--faculty-border);
+  border-right: none;
+}
+
+.form-control {
+  border-left: 1px solid var(--faculty-border);
+}
+
+.input-group .btn-outline-secondary {
+  border-color: var(--faculty-border);
+  color: var(--faculty-text);
+}
+
+.input-group .btn-outline-secondary:hover {
+  background-color: var(--faculty-bg);
+  border-color: var(--faculty-accent);
+  color: var(--faculty-accent);
+}
+
+/* ===== Button Styling ===== */
+.btn-gold {
+  background: linear-gradient(135deg, var(--faculty-accent) 0%, var(--faculty-accent-light) 100%);
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 12px 28px;
+  transition: all 0.3s;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(233, 181, 40, 0.4);
+  color: white;
+}
+
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+.btn-primary-faculty {
+  background: var(--faculty-primary);
+  border-color: var(--faculty-primary);
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn-primary-faculty:hover {
+  background: var(--faculty-primary-dark);
+  border-color: var(--faculty-primary-dark);
+  color: white;
+}
+
+.btn-outline-primary-faculty {
+  border: 2px solid var(--faculty-primary);
+  color: var(--faculty-primary);
+  font-weight: 600;
+}
+
+.btn-outline-primary-faculty:hover {
+  background: var(--faculty-primary);
+  color: white;
+}
+
+/* ===== Dashboard Sidebar ===== */
+.faculty-sidebar {
+  background: white;
+  border-right: 1px solid var(--faculty-border);
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 260px;
+  padding-top: 80px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.faculty-sidebar-header {
+  padding: 20px;
+  background: var(--faculty-primary);
+  color: white;
+  border-radius: 0 12px 12px 0;
+  margin: 10px 0;
+}
+
+.faculty-sidebar-header h6 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.faculty-menu-item {
+  padding: 12px 20px;
+  color: var(--faculty-text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s;
+  border-left: 4px solid transparent;
+  margin: 5px 0;
+}
+
+.faculty-menu-item i {
+  width: 20px;
+  text-align: center;
+  color: var(--faculty-accent);
+}
+
+.faculty-menu-item:hover {
+  background: var(--faculty-bg);
+  color: var(--faculty-primary);
+  border-left-color: var(--faculty-accent);
+  padding-left: 24px;
+}
+
+.faculty-menu-item.active {
+  background: var(--faculty-primary);
+  color: white;
+  border-left-color: var(--faculty-accent);
+}
+
+.faculty-menu-item.active i {
+  color: var(--faculty-accent);
+}
+
+.faculty-menu-submenu {
+  display: none;
+  background: var(--faculty-bg);
+  padding-left: 20px;
+}
+
+.faculty-menu-submenu.show {
+  display: block;
+}
+
+.faculty-menu-submenu .faculty-menu-item {
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  margin: 2px 0;
+}
+
+/* ===== Dashboard Content ===== */
+.faculty-main {
+  margin-left: 260px;
+  padding: 20px;
+  background: var(--faculty-bg);
+  min-height: 100vh;
+}
+
+.faculty-topbar {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.faculty-topbar-title h4 {
+  color: var(--faculty-primary);
+  font-weight: 700;
+  margin: 0;
+}
+
+.faculty-topbar-title small {
+  color: var(--faculty-text);
+  display: block;
+}
+
+.faculty-profile-menu {
+  position: relative;
+}
+
+.faculty-profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+  background: var(--faculty-primary);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.faculty-profile-btn:hover {
+  background: var(--faculty-primary-dark);
+  transform: scale(1.05);
+}
+
+.faculty-profile-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--faculty-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--faculty-primary);
+  font-weight: bold;
+}
+
+/* ===== Stats Cards ===== */
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 1px solid var(--faculty-border);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.stat-icon.primary {
+  background: rgba(18, 60, 110, 0.1);
+  color: var(--faculty-primary);
+}
+
+.stat-icon.accent {
+  background: rgba(233, 181, 40, 0.1);
+  color: var(--faculty-accent);
+}
+
+.stat-icon.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--faculty-success);
+}
+
+.stat-icon.danger {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--faculty-danger);
+}
+
+.stat-content h6 {
+  color: var(--faculty-text);
+  margin: 0 0 5px 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.stat-content .stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--faculty-primary);
+  margin: 0;
+}
+
+/* ===== Form Sections ===== */
+.form-section {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid var(--faculty-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-section-title {
+  color: var(--faculty-primary);
+  font-weight: 700;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--faculty-accent);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--faculty-text);
+  margin-bottom: 8px;
+}
+
+/* ===== Tables ===== */
+.faculty-table-container {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid var(--faculty-border);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead {
+  background: var(--faculty-primary);
+  color: white;
+}
+
+.table thead th {
+  border: none;
+  font-weight: 700;
+  padding: 15px;
+}
+
+.table tbody td {
+  padding: 15px;
+  border-color: var(--faculty-border);
+  vertical-align: middle;
+}
+
+.table tbody tr {
+  transition: all 0.3s;
+}
+
+.table tbody tr:hover {
+  background: var(--faculty-bg);
+}
+
+.table-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.table-badge.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--faculty-success);
+}
+
+.table-badge.warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--faculty-warning);
+}
+
+.table-badge.danger {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--faculty-danger);
+}
+
+/* ===== Modal Styling ===== */
+.modal-content {
+  border: 1px solid var(--faculty-border);
+  border-radius: 12px;
+}
+
+.modal-header {
+  background: var(--faculty-primary);
+  color: white;
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-header .btn-close {
+  filter: brightness(0) invert(1);
+}
+
+/* ===== File Upload ===== */
+.file-upload-area {
+  border: 2px dashed var(--faculty-accent);
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: rgba(233, 181, 40, 0.03);
+}
+
+.file-upload-area:hover {
+  background: rgba(233, 181, 40, 0.08);
+  border-color: var(--faculty-primary);
+}
+
+.file-upload-area.active {
+  background: rgba(233, 181, 40, 0.15);
+  border-color: var(--faculty-primary);
+}
+
+.file-upload-icon {
+  font-size: 48px;
+  color: var(--faculty-accent);
+  margin-bottom: 15px;
+}
+
+.file-upload-text {
+  color: var(--faculty-text);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.file-upload-hint {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* ===== Alert Styling ===== */
+.alert {
+  border: none;
+  border-radius: 8px;
+  border-left: 4px solid transparent;
+}
+
+.alert-success {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--faculty-success);
+  border-left-color: var(--faculty-success);
+}
+
+.alert-danger {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--faculty-danger);
+  border-left-color: var(--faculty-danger);
+}
+
+.alert-warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--faculty-warning);
+  border-left-color: var(--faculty-warning);
+}
+
+.alert-info {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--faculty-info);
+  border-left-color: var(--faculty-info);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .faculty-sidebar {
+    width: 200px;
+    padding-top: 70px;
+  }
+
+  .faculty-main {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .faculty-main.sidebar-active {
+    margin-left: 200px;
+  }
+
+  .faculty-topbar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .stat-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-section {
+    padding: 20px;
+  }
+
+  .login-card {
+    margin-top: 30px;
+  }
+
+  .login-info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .feature-item {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .faculty-sidebar {
+    position: fixed;
+    left: -100%;
+    width: 100%;
+    transition: left 0.3s;
+    padding-top: 60px;
+  }
+
+  .faculty-sidebar.show {
+    left: 0;
+  }
+
+  .faculty-main {
+    margin-left: 0;
+  }
+
+  .faculty-topbar {
+    padding: 12px 15px;
+  }
+
+  .faculty-topbar-title h4 {
+    font-size: 1.1rem;
+  }
+
+  .form-section {
+    padding: 15px;
+  }
+
+  .stat-card {
+    padding: 15px;
+  }
+
+  .table-responsive {
+    font-size: 0.85rem;
+  }
+}
+
+/* ===== Scrollbar Styling ===== */
+.faculty-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.faculty-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.faculty-sidebar::-webkit-scrollbar-thumb {
+  background: var(--faculty-accent);
+  border-radius: 3px;
+}
+
+.faculty-sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--faculty-primary);
+}

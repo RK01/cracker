@@ -1,0 +1,18 @@
+/* Mobile behavior */
+    @media (max-width: 991px) {
+      .sidebar {
+        transform: translateX(-100%);
+      }
+      .sidebar.collapsed {
+        transform: translateX(0);
+      }
+      .content {
+        margin-left: 0;
+      }
+      .content.collapsed {
+        margin-left: 0;
+      }
+      .toggle-icon {
+        display: block;
+      }
+    }

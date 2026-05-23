@@ -1,0 +1,194 @@
+body {
+      min-height: 100vh;
+      margin: 0;
+      transition: margin-left 0.3s ease;
+      background: #f8f9fa;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 260px;
+      background: #fff;
+      border-right: 1px solid #dee2e6;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      padding: 1rem;
+      overflow-y: auto;
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+    .sidebar.collapsed {
+      transform: translateX(-100%);
+    }
+    .sidebar .brand {
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: #4a6cf7;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .sidebar .profile {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .sidebar .profile img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .sidebar .profile h6 {
+      margin-top: 10px;
+      font-weight: 600;
+    }
+    .sidebar .nav-link {
+      color: #333;
+      font-size: 0.95rem;
+    }
+    .sidebar .nav-link:hover,
+    .sidebar .nav-link.active {
+      color: #4a6cf7;
+      background-color: #f1f5ff;
+      border-radius: 0.4rem;
+    }
+
+
+    .toggle-icon:hover {
+      color: #4a6cf7;
+    }
+.sidebar {
+        transform: translateX(0%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        background: #fff;
+        z-index: 1000;
+      }
+
+a.sidebar-toggle i.bi.toggle-icon.bi-list, a.sidebar-toggle  i.bi.toggle-icon.bi-x {
+    font-size: 30px;
+    margin-right: 15px;
+    color: #222;
+}
+
+    /* Content */
+    .content {
+      position: relative;
+      margin-left: 260px;
+      flex: 1;
+      transition: margin-left 0.3s ease;
+      z-index: 500;
+    }
+    .main-content {
+    margin-top: 50px;
+    padding: 35px;
+}
+    .content.collapsed {
+      margin-left: 0; /* expand to full width */
+    }
+    .content-header {
+    background: #ffffff;
+    box-shadow: 0px 3px 15px 0px #2222220a;
+}
+.content-header .dropdown-toggle::after{
+  display: none;
+}
+
+
+/* =========================== */
+
+.card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .stats-icon {
+      background-color: #0d6efd;
+      color: #fff;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+    }
+    .percentage-up {
+      color: #28a745;
+      font-size: 0.9rem;
+    }
+    .percentage-down {
+      color: #dc3545;
+      font-size: 0.9rem;
+    }
+    .chart-placeholder {
+      background: linear-gradient(#e9ecef, #f8f9fa);
+      border-radius: 10px;
+      /* height: 250px;
+      display: flex; */
+      align-items: center;
+      justify-content: center;
+      color: #6c757d;
+      font-size: 1rem;
+    }
+    .legend-color {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+    #browserChart{
+      width: 200px !important;
+      height: 198px !important;
+    }
+
+    /* login css */
+.authentication-wrapper.authentication-basic {
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.authentication-wrapper {
+    display: flex;
+    flex-basis: 100%;
+    min-height: 100vh;
+    width: 100%;
+}
+.authentication-wrapper.authentication-basic .authentication-inner {
+    max-width: 400px;
+    position: relative;
+}
+label#password_confirmation-error {
+    width: 100%;
+    margin-top: 5px;
+}
+.authentication-wrapper.authentication-basic .authentication-inner:before {
+    width: 148px;
+    height: 148px;
+    content: " ";
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    background-image: url(../img/after-new.svg);
+    z-index: -1;
+}
+.authentication-wrapper.authentication-basic .authentication-inner:after { 
+    background-image: url(../img/before-new.svg);
+    width: 243px;
+    height: 240px;
+    content: " ";
+    position: absolute;
+    bottom: -68px;
+    left: -46px;
+    z-index: -1;
+}
+.app-brand-logo{
+  width: 150px;
+  margin: 0 auto;
+}
