@@ -3,7 +3,7 @@
 <section class="page-hero text-white text-center py-5">
   <div class="container py-4">
     <span class="badge bg-warning text-dark mb-3">Our Story</span>
-    <h1 class="display-4 fw-bold">About Competitive Cracker</h1>
+    <h1 class="display-4 fw-bold">About Competition Cracker</h1>
     <p class="lead opacity-75">Empowering students to crack India's toughest exams since 2010</p>
   </div>
 </section>
@@ -12,7 +12,7 @@
   <div class="container py-4">
     <div class="section-title">
       <span class="badge bg-warnings bg-opacity-25 text-dark px-3 py-2 rounded-pill mb-2">ABOUT US</span>
-      <h2>Why Choose <span class="accent">Competitive Cracker</span>?</h2>
+      <h2>Why Choose <span class="accent">Competition Cracker</span>?</h2>
       <div class="line"></div>
     </div>
     <div class="row g-5 align-items-center mb-5">
@@ -24,7 +24,7 @@
       </div>
       <div class="col-md-6">
         <h3 class="fw-bold mb-3">Premier Coaching Institute Since 2010</h3>
-        <p class="text-muted">Competitive Cracker is a premier coaching institute dedicated to nurturing young minds and
+        <p class="text-muted">Competition Cracker is a premier coaching institute dedicated to nurturing young minds and
           preparing them for competitive examinations. With over 15 years of experience, we have helped thousands of
           students crack JEE, NEET, NDA, and other top-level exams.</p>
         <div class="row g-3">

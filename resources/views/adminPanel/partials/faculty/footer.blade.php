@@ -61,7 +61,7 @@
   <div class="border-top" style="border-color:rgba(255,255,255,.15)!important">
     <div
       class="container py-3 d-flex flex-column flex-md-row justify-content-between align-items-center small opacity-50">
-      <span>© 2026 Competitive Cracker. All rights reserved.</span>
+      <span>© 2026 Competition Cracker. All rights reserved.</span>
       <span>Made with ❤️ for students of India</span>
     </div>
   </div>

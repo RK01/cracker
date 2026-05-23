@@ -4,7 +4,7 @@
   <div class="container py-4">
     <span class="badge bg-warning text-dark mb-3">Register</span>
     <h1 class="display-4 fw-bold">Student Registration</h1>
-    <p class="lead opacity-75">Join Competitive Cracker — start your journey today</p>
+    <p class="lead opacity-75">Join Competition Cracker — start your journey today</p>
   </div>
 </section>
 

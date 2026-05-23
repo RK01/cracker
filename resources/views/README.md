@@ -1,4 +1,4 @@
-# Competitive Cracker — Bootstrap 5 Edition
+# Competition Cracker — Bootstrap 5 Edition
 
 https://future-forge-info.lovable.app/ (demo by) 
 
@@ -63,4 +63,4 @@ Static website built with Bootstrap 5, plain HTML, CSS, and vanilla JavaScript. 
 - Add or edit registration data: open browser console → `localStorage.getItem('cc_registrations')`.
 - To connect a real backend (PHP/Node), point the form `action` to your API endpoint and remove the JS preventDefault in `js/script.js`.
 
-© 2025 Competitive Cracker
+© 2025 Competition Cracker

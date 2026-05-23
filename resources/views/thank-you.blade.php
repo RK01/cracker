@@ -9,7 +9,7 @@
             <div class="success-badge"><i class="bi bi-check-lg"></i></div>
             <span class="badge bg-success-subtle text-success fw-semibold mb-2 px-3 py-2">Registration Successful</span>
             <h1 class="text-primary fw-bold mt-2">Welcome aboard, <span id="tyName">Student</span>! 🎉</h1>
-            <p class="text-muted mb-0">You have successfully registered with <strong>Competitive Cracker</strong>.</p>
+            <p class="text-muted mb-0">You have successfully registered with <strong>Competition Cracker</strong>.</p>
             <p class="text-muted">A confirmation has been sent to <strong id="tyEmail">your email</strong>.</p>
           </div>
 

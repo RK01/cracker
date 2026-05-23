@@ -24,7 +24,7 @@
           <div class="carousel-caption d-none d-md-block hero-content">
             <div style="max-width:900px">
               <span class="badge bg-warning text-dark px-3 py-2 rounded-pill mb-3 fs-6">🏆 #1 Coaching Institute</span>
-              <h1 class="display-4 fw-bold mb-3">Welcome to Competitive Cracker</h1>
+              <h1 class="display-4 fw-bold mb-3">Welcome to Competition Cracker</h1>
               <p class="lead mb-4 opacity-75">Crack Every Competition with Confidence</p>
               <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
                 <a href="#admissions" class="btn btn-gold btn-lg px-5">🎯 Register Now</a>
@@ -151,7 +151,7 @@
   <div class="container py-4">
     <div class="section-title">
       <span class="badge bg-warnings bg-opacity-25 text-dark px-3 py-2 rounded-pill mb-2">ABOUT US</span>
-      <h2>Why Choose <span class="accent">Competitive Cracker</span>?</h2>
+      <h2>Why Choose <span class="accent">Competition Cracker</span>?</h2>
       <div class="line"></div>
     </div>
     <div class="row g-5 align-items-center mb-5">
@@ -163,7 +163,7 @@
       </div>
       <div class="col-md-6">
         <h3 class="fw-bold mb-3">Premier Coaching Institute Since 2010</h3>
-        <p class="text-muted">Competitive Cracker is a premier coaching institute dedicated to nurturing young minds and
+        <p class="text-muted">Competition Cracker is a premier coaching institute dedicated to nurturing young minds and
           preparing them for competitive examinations. With over 15 years of experience, we have helped thousands of
           students crack JEE, NEET, NDA, and other top-level exams.</p>
         <div class="row g-3">
@@ -418,7 +418,7 @@
     <div class="section-title">
       <span class="badge bg-warnings bg-opacity-25 text-dark px-3 py-2 rounded-pill mb-2">OUR TEAM</span>
       <h2>Meet Our Expert <span class="accent">Faculty</span></h2>
-      <p class="text-muted">The mentors who shape futures at Competitive Cracker</p>
+      <p class="text-muted">The mentors who shape futures at Competition Cracker</p>
       <div class="line"></div>
     </div>
     <div class="row g-4 justify-content-center">
@@ -667,7 +667,7 @@
     <div class="mx-auto" style="max-width:750px">
       <div class="faq-item open"><button class="faq-btn" onclick="toggleFaq(this)"><span class="d-flex align-items-start gap-2">
             <span class="faq-badge badge bg-warning text-dark rounded-circle d-inline-flex align-items-center justify-content-center">1</span><span style="font-size:14px">How can I take
-              admission in Competitive Cracker?</span></span><i class="bi bi-chevron-down faq-chevron" style="transition:transform .3s"></i></button>
+              admission in Competition Cracker?</span></span><i class="bi bi-chevron-down faq-chevron" style="transition:transform .3s"></i></button>
         <div class="faq-body">
           <p class="text-muted small mb-0">You can visit our centre directly or fill out the online application form by
             clicking the Apply Now button on our website. Admission is granted based on an entrance test or merit.</p>
