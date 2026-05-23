@@ -100,7 +100,8 @@ Route::get('/get-city/{sate_id}', function($sate_id) {
 });
 
 // Auth Pages
-Route::get('/login/{role?}', [LoginController::class, 'showLoginForm'])->name('login');
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::get('/faculty-login', [LoginController::class, 'showFacultyLoginForm'])->name('faculty.login');
 Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 

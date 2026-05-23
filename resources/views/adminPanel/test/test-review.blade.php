@@ -30,6 +30,13 @@
                             </div>
                         </div>
 
+                        <div>
+                            <span style="font-size: 0.85rem;">
+                            {{ \Carbon\Carbon::parse($attempt->responses[0]->created_at)->format('d M, Y') }}
+                            <small class="text-muted">{{ \Carbon\Carbon::parse($attempt->responses[0]->created_at)->format('h:i A') }}</small>
+                            </span>
+                        </div>
+
                         <div class="d-flex align-items-center gap-3">
                             <span class="badge bg-success-subtle text-success border border-success px-2.5 py-1.5 rounded-2 font-monospace fw-bold">
                                 Score Metrics: {{ $attempt->score }}

@@ -55,6 +55,9 @@
           <p class="d-flex gap-2 mb-3"><i class="bi bi-telephone-fill text-warning"></i>+91 12345 67890</p>
           <p class="d-flex gap-2 mb-0"><i class="bi bi-envelope-fill text-warning"></i>info@competitioncracker.in</p>
         </div>
+         <a class="btn btn-outline-warning fw-bold me-2 text-nowrap mt-3" href="{{ route('faculty.login') }}">
+            <i class="bi bi-box-arrow-in-right"></i> Faculty Login
+          </a>
       </div>
     </div>
   </div>

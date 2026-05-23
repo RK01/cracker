@@ -63,6 +63,7 @@
                             <th>Questions</th>
                             <th>Duration</th>
                             <th>Attempts</th>
+                            <th>Created Date</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -73,6 +74,12 @@
                             <td>{{ $test->questions->count() }}</td>
                             <td>{{ $test->duration_minutes }} Min</td>
                             <td><span class="badge bg-info text-dark">{{ $test->attempts->count() }} Students</span></td>
+                            <td>
+                                <div style="font-size: 0.85rem;">
+                                {{ \Carbon\Carbon::parse($test->created_at)->format('d M, Y') }}<br>
+                                <small class="text-muted">{{ \Carbon\Carbon::parse($test->created_at)->format('h:i A') }}</small>
+                                </div>
+                            </td>
                             <td>
                                 <button class="btn btn-sm btn-gold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTest{{ $test->id }}">
                                     View Attempts
@@ -102,6 +109,10 @@
                                                         <strong>{{ userNameById($attempt->user_id) }}</strong>
                                                         <span class="badge {{ $attempt->status == 'completed' ? 'bg-success' : 'bg-warning' }} ms-1">
                                                             {{ strtoupper($attempt->status) }}
+                                                        </span>
+                                                        <span style="font-size: 0.85rem;">
+                                                            {{ \Carbon\Carbon::parse($attempt->responses[0]->created_at)->format('d M, Y') }}
+                                                            <small class="text-muted">{{ \Carbon\Carbon::parse($attempt->responses[0]->created_at)->format('h:i A') }}</small>
                                                         </span>
                                                     </div>
                                                     <div class="small">

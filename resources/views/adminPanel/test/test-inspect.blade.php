@@ -150,6 +150,12 @@
                                                                 <span class="badge bg-light text-secondary border font-monospace px-1.5 py-0.5 rounded" style="font-size: 0.68rem;">{{ $test->duration_minutes }} Min</span>
                                                             </div>
                                                         </div>
+                                                         <div>
+                                                             <span style="font-size: 0.85rem;">
+                                                            {{ \Carbon\Carbon::parse($test->created_at)->format('d M, Y') }}
+                                                            <small class="text-muted">{{ \Carbon\Carbon::parse($test->created_at)->format('h:i A') }}</small>
+                                                            </span>
+                                                        </div>
 
                                                         <div class="d-flex align-items-center gap-3 justify-content-end flex-shrink-0">
                                                             @if($test->attempts->count() > 0)

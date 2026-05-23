@@ -13,6 +13,10 @@ class LoginController extends Controller
     {
         return view('login');
     }
+    
+    public function showFacultyLoginForm(){
+        return view('faculty-login');
+    }
 
     public function login(Request $request)
     {
@@ -29,6 +33,7 @@ class LoginController extends Controller
         if (Auth::attempt([$fieldType => $request->login, 'password' => $request->password], $request->remember)) {
 
             $user = Auth::user();
+
             // --- ROLE BOUNDARY VALIDATION ---
 
             // Case A: if is Request Admin Login 
@@ -42,7 +47,7 @@ class LoginController extends Controller
             }
 
             // Case B: if is Student/Faculty Login Request
-            if ($request->role === 'student_faculty_login') {
+            if ($request->role === 'student_login') {
 
                 if ($user->role === 'student') {
                     $request->session()->regenerate();
@@ -50,9 +55,27 @@ class LoginController extends Controller
                 }
 
                 if ($user->role === 'faculty') {
+                   return $this->logoutWithError($request, 'Faculty must use the dedicated faculty login portal.');
+                }
+
+                // Agar admin is form se login karne ki koshish kare
+                if ($user->role === 'admin') {
+                    return $this->logoutWithError($request, 'Administrators must use the dedicated admin login portal.');
+                }
+            }
+            
+            // Case C: if is Faculty Login Request
+            if ($request->role === 'faculty_login') {
+                
+                if ($user->role === 'faculty') {
                     $request->session()->regenerate();
                     return redirect()->intended(route('faculty.dashboard'));
                 }
+
+                if ($user->role === 'student') {
+                    return $this->logoutWithError($request, 'Student must use the dedicated student login portal.');
+                }
+
 
                 // Agar admin is form se login karne ki koshish kare
                 if ($user->role === 'admin') {
